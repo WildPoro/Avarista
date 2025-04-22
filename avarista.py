@@ -457,14 +457,14 @@ class CoffeeMachineRhino(Thread):
         try:
             # Initialize Picovoice components
             self.porcupine = pvporcupine.create(
-                access_key="6y4iKfEqUJ3sKuJS5Pt1bIiRz67PoyYc0KS1zLqDkorQxzCdGeSiRg==",
-                keyword_paths=["/home/A09/tpj655/Hi-Ava_en_raspberry-pi_v3_0_0.ppn"]
+                access_key="#########################################################",
+                keyword_paths=["#########################################################"]
             )
             self.rhino = pvrhino.create(
-                access_key="6y4iKfEqUJ3sKuJS5Pt1bIiRz67PoyYc0KS1zLqDkorQxzCdGeSiRg==",
-                library_path="/home/A09/rhino/lib/raspberry-pi/cortex-a72-aarch64/libpv_rhino.so",
-                model_path="/home/A09/rhino/lib/common/rhino_params.pv",
-                context_path="/home/A09/tpj655/Avarista_en_raspberry-pi_v3_0_0.rhn"
+                access_key="#########################################################",
+                library_path="#########################################################",
+                model_path="#########################################################",
+                context_path="#########################################################"
             )
             self.recorder = PvRecorder(device_index=-1, frame_length=self.porcupine.frame_length)
             self.recorder.start()
